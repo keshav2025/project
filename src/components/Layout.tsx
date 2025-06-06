@@ -2,7 +2,8 @@ import React from 'react';
 import { User } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 import { useLocation } from 'react-router-dom';
-import logo from '../assets/logo-american-express-computer-icons-sign-payment-american-express-86dd053d422618121424f442038de874.png';
+// Ensure this path is correct relative to the build output
+import logo from '../assets/WhatsApp Image 2025-06-06 at 18.10.54 (1).png';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -24,15 +25,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
          
         </div>
 
-        <div className="flex-1 flex justify-center">
+        <div className="flex-1 flex justify-center items-center">
           <img 
             src={logo} 
             alt="American Express" 
-            className="h-14 w-12"
+            className="h-16 w-auto object-contain p-1" 
           />
         </div>
-
-        
 
         {showUserIcon && (
           <div className="absolute right-4">
